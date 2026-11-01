@@ -1,0 +1,12 @@
+{
+  "profile": "database",
+  "description": "Scoped to relational and NoSQL engines: Spanner, CloudSQL, AlloyDB, and Bigtable.",
+  "active_servers": [
+    "dak_dak-spanner",
+    "dak_dak-cloudsql",
+    "dak_dak-alloydb",
+    "dak_dak-bigtable",
+    "dak_dak-bigtable-data"
+  ],
+  "estimated_token_footprint": "12,000 tokens"
+}

@@ -1,0 +1,10 @@
+{
+  "profile": "data",
+  "description": "Scoped to BigQuery, Google Cloud Storage, and Jupyter Notebook data analytics.",
+  "active_servers": [
+    "dak_dak-bigquery",
+    "dak_dak-gcs",
+    "dak_dak-notebook"
+  ],
+  "estimated_token_footprint": "6,500 tokens"
+}

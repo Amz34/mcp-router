@@ -1,0 +1,6 @@
+{
+  "profile": "minimal",
+  "description": "Zero MCP overhead for standard coding, Git, SRE maintenance, and bash operations.",
+  "active_servers": [],
+  "allowed_tools": []
+}
