@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="128" height="128">
+  <defs>
+    <linearGradient id="mcpSquircleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <filter id="mcpShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#4338ca" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- iOS / macOS Squircle App Icon Tile -->
+  <rect x="16" y="16" width="224" height="224" rx="52" fill="url(#mcpSquircleGrad)" filter="url(#mcpShadow)"/>
+  <rect x="18" y="18" width="220" height="220" rx="50" fill="none" stroke="#ffffff" stroke-width="2" stroke-opacity="0.25"/>
+
+  <!-- Router Hexagon / Fast Highway Nodes Symbol -->
+  <g transform="translate(48, 48)">
+    <!-- Circuit lines -->
+    <path d="M 80 20 L 135 52 L 135 116 L 80 148 L 25 116 L 25 52 Z" fill="#0f172a" stroke="#a5b4fc" stroke-width="6"/>
+    <!-- Connecting spokes -->
+    <line x1="80" y1="84" x2="80" y2="20" stroke="#38bdf8" stroke-width="5"/>
+    <line x1="80" y1="84" x2="135" y2="52" stroke="#38bdf8" stroke-width="5"/>
+    <line x1="80" y1="84" x2="135" y2="116" stroke="#38bdf8" stroke-width="5"/>
+    <line x1="80" y1="84" x2="80" y2="148" stroke="#38bdf8" stroke-width="5"/>
+    <line x1="80" y1="84" x2="25" y2="116" stroke="#38bdf8" stroke-width="5"/>
+    <line x1="80" y1="84" x2="25" y2="52" stroke="#38bdf8" stroke-width="5"/>
+
+    <!-- Central Node -->
+    <circle cx="80" cy="84" r="22" fill="#6366f1" stroke="#ffffff" stroke-width="3"/>
+    <!-- Lightning Bolt for Sub-millisecond Speed -->
+    <path d="M 82 72 L 73 84 L 79 84 L 77 96 L 87 83 L 81 83 Z" fill="#ffffff"/>
+  </g>
+</svg>

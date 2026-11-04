@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-  <img src="assets/logo.svg" alt="mcp-router logo" width="650">
+  <img src="assets/icon.svg" width="128" height="128" alt="mcp-router icon: dynamic scope router on indigo squircle tile">
 </p>
 
 # ⚡ mcp-router
