@@ -1,10 +1,28 @@
-# mcp-router
+<div align="center">
 
-[![CI](https://github.com/Amz34/mcp-router/actions/workflows/ci.yml/badge.svg)](https://github.com/Amz34/mcp-router/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python: 3.10+](https://img.shields.io/badge/Python-3.10%2B-brightgreen.svg)](#)
+<p align="center">
+  <img src="assets/logo.svg" alt="mcp-router logo" width="650">
+</p>
 
-`mcp-router` is a high-speed, sub-millisecond dynamic router, scope isolator, and context-window token containment engine for the Model Context Protocol (MCP).
+# ⚡ mcp-router
+
+**Sub-Millisecond Dynamic MCP Tool Router, Scope Isolator & Context Token Containment Engine**
+
+[![Python: 3.10+](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Google Gemini](https://img.shields.io/badge/Google_Gemini-8E75C2?style=for-the-badge&logo=googlegemini&logoColor=white)](https://ai.google.dev)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
+[![Oracle Cloud](https://img.shields.io/badge/Oracle_Cloud-F80000?style=for-the-badge&logo=oracle&logoColor=white)](https://cloud.oracle.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge)](LICENSE)
+
+<br>
+
+**[⚡ Quick Start](#-quick-start)** · **[🔍 The Problem](#the-problem-the-upfront-context-tax)** · **[🏗️ Routing Engine](#the-solution-dynamic-intent-routing--scope-profiles)** · **[📊 Benchmarks](#-benchmarks)**
+
+</div>
+
+---
+ is a high-speed, sub-millisecond dynamic router, scope isolator, and context-window token containment engine for the Model Context Protocol (MCP).
 
 Inspired by enterprise control planes ([`microsoft/mcp-gateway`](https://github.com/microsoft/mcp-gateway) and [`smart-mcp-proxy`](https://github.com/smart-mcp-proxy/mcpproxy-go)), `mcp-router` eliminates upfront tool schema token burn (30,000 to 60,000+ tokens per interaction) by actively masking unneeded MCP schemas and dynamically injecting only the tools required for the task.
 

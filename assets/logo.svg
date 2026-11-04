@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="800" height="240" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="2"/>
+  
+  <!-- Subtle Grid lines -->
+  <path d="M 0 60 L 800 60 M 0 120 L 800 120 M 0 180 L 800 180" stroke="#1e293b" stroke-width="1" stroke-opacity="0.3"/>
+  <path d="M 200 0 L 200 240 M 400 0 L 400 240 M 600 0 L 600 240" stroke="#1e293b" stroke-width="1" stroke-opacity="0.3"/>
+
+  <!-- Logo Mark (Hexagon Router Hub) -->
+  <g transform="translate(60, 45)">
+    <!-- Outer Glow Polygon -->
+    <polygon points="75,10 135,45 135,105 75,140 15,105 15,45" fill="none" stroke="url(#accentGrad)" stroke-width="3" filter="url(#glow)"/>
+    <polygon points="75,10 135,45 135,105 75,140 15,45" fill="#0f172a" stroke="#6366f1" stroke-width="2"/>
+    <!-- Central Node -->
+    <circle cx="75" cy="75" r="18" fill="url(#accentGrad)"/>
+    <!-- Connecting Circuit Nodes -->
+    <circle cx="35" cy="55" r="6" fill="#38bdf8"/>
+    <circle cx="115" cy="55" r="6" fill="#38bdf8"/>
+    <circle cx="75" cy="115" r="6" fill="#ec4899"/>
+    <!-- Connecting vectors -->
+    <path d="M 75 75 L 35 55 M 75 75 L 115 55 M 75 75 L 75 115" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Fast Lightning bolt inside center -->
+    <path d="M 77 66 L 70 76 L 75 76 L 73 84 L 81 74 L 76 74 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(240, 75)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
+      mcp<tspan fill="url(#accentGrad)">-router</tspan>
+    </text>
+    
+    <text y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#38bdf8" letter-spacing="1.5">
+      SUB-MILLISECOND AI AGENT CONTROL PLANE
+    </text>
+
+    <text y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#94a3b8">
+      Dynamic Scope Isolation • 45k+ Token Containment • Zero-Latency Gate
+    </text>
+
+    <!-- Micro Tech Badges -->
+    <g transform="translate(0, 96)">
+      <rect width="64" height="22" rx="4" fill="#1e293b"/>
+      <text x="32" y="15" font-family="monospace" font-size="11" font-weight="bold" fill="#a5b4fc" text-anchor="middle">&lt;1.5ms</text>
+      
+      <rect x="74" width="78" height="22" rx="4" fill="#1e293b"/>
+      <text x="113" y="15" font-family="monospace" font-size="11" font-weight="bold" fill="#34d399" text-anchor="middle">-98% TOKENS</text>
+      
+      <rect x="162" width="86" height="22" rx="4" fill="#1e293b"/>
+      <text x="205" y="15" font-family="monospace" font-size="11" font-weight="bold" fill="#f43f5e" text-anchor="middle">FAIL-CLOSED</text>
+    </g>
+  </g>
+</svg>
